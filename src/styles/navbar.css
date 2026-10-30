@@ -1,0 +1,93 @@
+/* NAVBAR MAIN */
+.nav-container {
+  display: flex;
+  align-items: center;
+  padding: 16px 32px;
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255,255,255,0.35);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* LOGO */
+.nav-logo {
+  font-size: 26px;
+  font-weight: 800;
+  text-decoration: none;
+  color: var(--accent-dark);
+  letter-spacing: -0.5px;
+}
+
+/* RIGHT SECTION */
+.nav-right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* USER INFO */
+.nav-user {
+  font-size: 15px;
+  font-weight: 600;
+  color: #222;
+}
+
+.dot {
+  font-weight: 900;
+  color: var(--accent);
+}
+
+/* NAV BUTTON */
+.nav-btn {
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.25s;
+  color: white;
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+}
+
+/* OUTLINE BUTTON */
+.nav-btn.outline {
+  background: transparent;
+  border: 2px solid var(--accent);
+  color: var(--accent-dark);
+}
+
+.nav-btn.outline:hover {
+  background: var(--accent);
+  color: white;
+}
+
+/* RED BUTTON */
+.nav-btn.red {
+  background: linear-gradient(135deg, #ff5c5c, #e63939);
+}
+
+/* HOVER */
+.nav-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* RESPONSIVE */
+@media (max-width: 720px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 14px 20px;
+  }
+
+  .nav-right {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}

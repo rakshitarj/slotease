@@ -1,0 +1,52 @@
+/* HOME PAGE – HERO STYLE */
+
+.home-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  animation: fadeIn 0.5s ease;
+}
+
+.home-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(18px);
+  padding: 50px 40px;
+  border-radius: 20px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.10);
+  max-width: 520px;
+  text-align: center;
+  border: 1px solid rgba(255,255,255,0.45);
+}
+
+.home-title {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 14px;
+  color: #1d8d86;
+}
+
+.home-text {
+  font-size: 15.5px;
+  color: #6c737c;
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+
+.home-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+
+.home-btn {
+  min-width: 120px;
+  font-size: 15px !important;
+  padding: 12px 20px !important;
+}
+
+/* Smooth entry animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,82 @@
+/* CARDS */
+:root {
+  --accent: #2bb3a8;
+  --accent-dark: #1d8d86;
+  --accent-light: #e3f6f5;
+
+  --bg1: #eef2f5;
+  --bg2: #dde4e9;
+
+  --card-bg: rgba(255, 255, 255, 0.85);
+  --card-border: rgba(255, 255, 255, 0.35);
+
+  --text: #1d1f21;
+  --muted: #6c737c;
+
+  --danger: #e63946;
+
+  --radius: 14px;
+  --shadow: 0 10px 25px rgba(0,0,0,0.10);
+  --shadow-hover: 0 14px 40px rgba(0,0,0,0.15);
+}
+
+.card {
+  background: var(--card-bg);
+  backdrop-filter: blur(16px);
+  padding: 28px;
+  border-radius: var(--radius);
+  border: 1px solid var(--card-border);
+  box-shadow: var(--shadow);
+  margin: 24px auto;
+  max-width: 900px;
+  transition: 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* BUTTONS */
+.btn {
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: .25s;
+}
+
+.btn.small {
+  padding: 8px 14px;
+  font-size: 13px;
+}
+
+.btn.red {
+  background: linear-gradient(135deg, #ff5c5c, #e63939);
+}
+
+.btn.outline {
+  background: transparent;
+  border: 2px solid var(--accent);
+  color: var(--accent-dark);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* INPUT */
+.input, select, input[type="date"], input[type="time"] {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: var(--radius);
+  border: 1px solid #d0d7de;
+  background: #fff;
+  font-size: 15px;
+  margin-bottom: 14px;
+}

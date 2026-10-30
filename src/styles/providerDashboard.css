@@ -1,0 +1,111 @@
+/* Main Card */
+.pd-card {
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(16px);
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 900px;
+  margin: 30px auto;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+  animation: fadeIn 0.4s ease;
+}
+
+/* Main Title */
+.pd-title {
+  font-size: 28px;
+  font-weight: 800;
+  text-align: center;
+  color: #1d8d86;
+  margin-bottom: 28px;
+}
+
+/* Section */
+.pd-section {
+  margin-bottom: 30px;
+}
+
+.pd-section-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: #1d1f21;
+}
+
+/* Request List */
+.pd-request-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pd-request-card {
+  background: #e3f6f5;
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid #c8ece9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.07);
+}
+
+/* Left Block */
+.pd-left {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.pd-user {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1d8d86;
+}
+
+.pd-datetime {
+  font-size: 14px;
+  color: #6c737c;
+}
+
+/* Status Badge */
+.pd-status {
+  margin-top: 6px;
+  padding: 6px 14px;
+  border-radius: 16px;
+  font-size: 13px;
+  font-weight: 700;
+  width: fit-content;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.pd-status.pending {
+  background: #f8c73c;
+}
+
+.pd-status.approved {
+  background: #27b37d;
+}
+
+.pd-status.rejected {
+  background: #e63946;
+}
+
+/* Action Buttons */
+.pd-actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* Muted Message */
+.pd-muted {
+  color: #6c737c;
+  font-size: 15px;
+  text-align: center;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
